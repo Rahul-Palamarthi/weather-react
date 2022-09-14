@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "ndot";
+    src: url("../asserts/fonts/ndot-font.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: white;
+}
+
+body {
+    border: 1px solid blue;
+    width: min(430px, 100%);
+    margin: 0 auto;
+    color: var(--white);
+    background-color: var(--black);
+    min-height: 100vh;
+    font-family: var(--ndot);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --white: #ffffff;
+    --white-100: #e7eae9;
+    --black: #07080a;
+    --grey: #2c2d30;
+    --pri-red: #d71921;
+    --ndot: "ndot";
+    --noto-sans: "Noto Sans", sans-serif;
+}

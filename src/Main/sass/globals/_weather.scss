@@ -1,0 +1,43 @@
+@use "../utils" as u;
+
+.weather {
+    &__container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    &__data {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 3em 0;
+    }
+
+    &__info {
+        p {
+            font-family: u.$noto-sans;
+            text-transform: uppercase;
+            line-height: 1.5em;
+        }
+    }
+
+    &__temp {
+        font-size: 2.5rem;
+        font-family: u.$ndot !important;
+
+        span {
+            font-size: 1rem;
+        }
+    }
+
+    &__imgContainer {
+        text-align: center;
+        position: relative;
+    }
+}
+
+.weatherImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
